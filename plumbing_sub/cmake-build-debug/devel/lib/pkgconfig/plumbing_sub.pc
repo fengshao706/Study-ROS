@@ -1,0 +1,8 @@
+prefix=/home/wjr/ros_ws/src/plumbing_sub/cmake-build-debug/devel
+
+Name: plumbing_sub
+Description: Description of plumbing_sub
+Version: 0.0.0
+Cflags: -I/home/wjr/ros_ws/src/plumbing_sub/cmake-build-debug/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs message_runtime

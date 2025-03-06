@@ -1,0 +1,8 @@
+prefix=/home/wjr/ros_ws/src/param_server/cmake-build-debug/devel
+
+Name: param_server
+Description: Description of param_server
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
