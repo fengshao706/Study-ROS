@@ -24,6 +24,9 @@
 /home/wjr/ros_ws/src/control_turtle/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
 /home/wjr/ros_ws/src/control_turtle/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 /home/wjr/ros_ws/src/control_turtle/cmake-build-debug/CMakeFiles/control_turtle_node.dir
+/home/wjr/ros_ws/src/control_turtle/cmake-build-debug/CMakeFiles/get_turtle_node.dir
+/home/wjr/ros_ws/src/control_turtle/cmake-build-debug/CMakeFiles/generate_turtle_node.dir
+/home/wjr/ros_ws/src/control_turtle/cmake-build-debug/CMakeFiles/set_background_param_node.dir
 /home/wjr/ros_ws/src/control_turtle/cmake-build-debug/CMakeFiles/test.dir
 /home/wjr/ros_ws/src/control_turtle/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/wjr/ros_ws/src/control_turtle/cmake-build-debug/CMakeFiles/rebuild_cache.dir

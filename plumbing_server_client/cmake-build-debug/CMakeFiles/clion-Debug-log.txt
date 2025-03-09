@@ -59,19 +59,6 @@ CMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:58 (c
 -- BUILD_SHARED_LIBS is on
 -- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
 -- plumbing_server_client: 0 messages, 1 services
--- Configuring done (0.6s)
-CMake Error at CMakeLists.txt:137 (add_executable):
-  Cannot find source file:
-
-    src/plumbing_client_node.cpp
-
-  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm
-  .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90
-  .f95 .f03 .hip .ispc
-
-
-CMake Error at CMakeLists.txt:137 (add_executable):
-  No SOURCES given to target: plumbing_client_node
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/wjr/ros_ws/src/plumbing_server_client/cmake-build-debug

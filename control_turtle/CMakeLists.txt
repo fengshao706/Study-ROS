@@ -133,7 +133,16 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
- add_executable(control_turtle_node src/control_turtle_node.cpp)
+ add_executable(control_turtle_node src/control_turtle_node.cpp
+
+
+ )
+add_executable(get_turtle_node src/get_turtle_node.cpp
+)
+add_executable(generate_turtle_node src/generate_turtle_node.cpp
+)
+add_executable(set_background_param_node src/set_background_param_node.cpp
+)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -149,6 +158,15 @@ include_directories(
  target_link_libraries(control_turtle_node
    ${catkin_LIBRARIES}
  )
+target_link_libraries(get_turtle_node
+        ${catkin_LIBRARIES}
+)
+target_link_libraries(generate_turtle_node
+        ${catkin_LIBRARIES}
+)
+target_link_libraries(set_background_param_node
+        ${catkin_LIBRARIES}
+)
 
 #############
 ## Install ##

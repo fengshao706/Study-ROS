@@ -59,6 +59,6 @@ CMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:58 (c
 -- BUILD_SHARED_LIBS is on
 -- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
 -- plumbing_sub: 1 messages, 0 services
--- Configuring done (0.6s)
+-- Configuring done (0.8s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/wjr/ros_ws/src/plumbing_sub/cmake-build-debug
