@@ -1,0 +1,8 @@
+prefix=/home/wjr/ros_ws/src/static_tf_change/cmake-build-debug/devel
+
+Name: static_tf_change
+Description: Description of static_tf_change
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
