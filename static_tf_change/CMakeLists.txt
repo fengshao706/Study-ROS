@@ -138,6 +138,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
  add_executable(static_tf_change_pub_node src/static_tf_change_pub_node.cpp)
+add_executable(static_tf_change_sub_node src/static_tf_change_sub_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -148,11 +149,15 @@ include_directories(
 ## Add cmake target dependencies of the executable
 ## same as for the library above
  add_dependencies(static_tf_change_pub_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(static_tf_change_sub_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
  target_link_libraries(static_tf_change_pub_node
    ${catkin_LIBRARIES}
  )
+target_link_libraries(static_tf_change_sub_node
+        ${catkin_LIBRARIES}
+)
 
 #############
 ## Install ##

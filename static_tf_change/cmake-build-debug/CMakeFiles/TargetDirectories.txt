@@ -39,6 +39,7 @@
 /home/wjr/ros_ws/src/static_tf_change/cmake-build-debug/CMakeFiles/actionlib_generate_messages_nodejs.dir
 /home/wjr/ros_ws/src/static_tf_change/cmake-build-debug/CMakeFiles/actionlib_generate_messages_py.dir
 /home/wjr/ros_ws/src/static_tf_change/cmake-build-debug/CMakeFiles/static_tf_change_pub_node.dir
+/home/wjr/ros_ws/src/static_tf_change/cmake-build-debug/CMakeFiles/static_tf_change_sub_node.dir
 /home/wjr/ros_ws/src/static_tf_change/cmake-build-debug/CMakeFiles/test.dir
 /home/wjr/ros_ws/src/static_tf_change/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/wjr/ros_ws/src/static_tf_change/cmake-build-debug/CMakeFiles/rebuild_cache.dir

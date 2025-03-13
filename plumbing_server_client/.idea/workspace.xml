@@ -750,9 +750,6 @@
       <change afterPath="$PROJECT_DIR$/../../devel/share/roseus/ros/plumbing_server_client/srv/AddInts.l" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../devel/share/roseus/ros/plumbing_sub/manifest.l" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../devel/share/roseus/ros/plumbing_sub/msg/self_defined_sub.l" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../control_turtle/launch/control_turtle_node.launch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../control_turtle/src/generate_turtle_node.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../control_turtle/src/get_turtle_node.cpp" afterDir="false" />
       <change afterPath="/opt/ros/noetic/.catkin" afterDir="false" />
       <change afterPath="/opt/ros/noetic/.rosinstall" afterDir="false" />
       <change afterPath="/opt/ros/noetic/_setup_util.py" afterDir="false" />
@@ -8037,25 +8034,6 @@
       <change afterPath="/opt/ros/noetic/share/xmlrpcpp/cmake/xmlrpcppConfig-version.cmake" afterDir="false" />
       <change afterPath="/opt/ros/noetic/share/xmlrpcpp/cmake/xmlrpcppConfig.cmake" afterDir="false" />
       <change afterPath="/opt/ros/noetic/share/xmlrpcpp/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../control_turtle/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../control_turtle/.idea/editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../control_turtle/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../control_turtle/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../control_turtle/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../control_turtle/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../control_turtle/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-7a78dcbb5b183d0f6eba.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../control_turtle/cmake-build-debug/.cmake/api/v1/reply/index-2025-03-06T13-54-21-0341.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../control_turtle/cmake-build-debug/.cmake/api/v1/reply/target-control_turtle_node-Debug-3b56975e0f4582e5d87c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../control_turtle/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../control_turtle/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../control_turtle/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../control_turtle/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../control_turtle/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../control_turtle/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../control_turtle/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../control_turtle/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../control_turtle/src/control_turtle_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../control_turtle/src/control_turtle_node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-03-04T14-09-08-0450.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plumbing_sub/cmake-build-debug/.cmake/api/v1/reply/index-2025-03-04T04-25-56-0838.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plumbing_sub/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../plumbing_sub/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plumbing_sub/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../plumbing_sub/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plumbing_sub/cmake-build-debug/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../plumbing_sub/cmake-build-debug/catkin_generated/setup_cached.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -8083,32 +8061,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.west.config.association.type.startup.service": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CppOtherInlayHintsOptions",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CppOtherInlayHintsOptions&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="CMake 应用程序.download_extra_data">
     <configuration name="_plumbing_server_client_generate_messages_check_deps_AddInts" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="plumbing_server_client" TARGET_NAME="_plumbing_server_client_generate_messages_check_deps_AddInts" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -8349,6 +8322,7 @@
       <updated>1741079733981</updated>
       <workItem from="1741079735100" duration="8652000" />
       <workItem from="1741504501690" duration="1668000" />
+      <workItem from="1741771923822" duration="625000" />
     </task>
     <servers />
   </component>

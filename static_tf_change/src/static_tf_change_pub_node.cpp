@@ -13,9 +13,9 @@ int main(int argc, char *argv[]) {
     geometry_msgs::TransformStamped tfs;//创建坐标标记对象
     tfs.header.stamp =ros::Time::now();//设定时间戳
     tfs.header.frame_id="base_link";//相对坐标系中被参考的那一个
-    tfs.child_frame_id="laser";
+    tfs.child_frame_id="laser";//设置子坐标系
     tfs.transform.translation.x=0.2;
-    tfs.transform.translation.y=0.0;//设置变换的位置坐标
+    tfs.transform.translation.y=0.0;//设置变换的位置坐标，即子坐标系相对于父坐标系的偏移量
     tfs.transform.translation.z=0.5;
     tf2::Quaternion quaternion;//创建四元数对象
     quaternion.setRPY(0,0,0);

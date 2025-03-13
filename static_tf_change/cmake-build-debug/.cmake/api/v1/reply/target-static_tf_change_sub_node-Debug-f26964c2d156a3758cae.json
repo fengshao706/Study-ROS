@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "devel/lib/static_tf_change/static_tf_change_pub_node"
+			"path" : "devel/lib/static_tf_change/static_tf_change_sub_node"
 		}
 	],
 	"backtrace" : 1,
@@ -37,19 +37,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 140,
+				"line" : 141,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 153,
+				"line" : 158,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 150,
+				"line" : 152,
 				"parent" : 0
 			},
 			{
@@ -323,7 +323,7 @@
 			"id" : "actionlib_generate_messages_py::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "static_tf_change_pub_node::@6890427a1f51a3e7e1df",
+	"id" : "static_tf_change_sub_node::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -452,8 +452,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "static_tf_change_pub_node",
-	"nameOnDisk" : "static_tf_change_pub_node",
+	"name" : "static_tf_change_sub_node",
+	"nameOnDisk" : "static_tf_change_sub_node",
 	"paths" : 
 	{
 		"build" : ".",
@@ -474,7 +474,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/static_tf_change_pub_node.cpp",
+			"path" : "src/static_tf_change_sub_node.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
