@@ -1,0 +1,8 @@
+prefix=/home/wjr/ros_ws/src/dynamic_tf_change/cmake-build-debug/devel
+
+Name: dynamic_tf_change
+Description: Description of dynamic_tf_change
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

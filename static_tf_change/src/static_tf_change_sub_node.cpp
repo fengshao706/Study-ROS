@@ -1,6 +1,6 @@
 //
 // Created by wjr on 25-3-13.
-//任务目标：将障碍物的坐标点转换为相对小车底盘的坐标点
+//任务目标：将障碍物的坐标点转换为相对小车底盘的坐标点,即将laser坐标系下的点转换为相对与base_link坐标系的点
 #include "ros/ros.h"
 #include "tf2_ros/transform_listener.h"
 #include "tf2_ros/buffer.h"//缓存
