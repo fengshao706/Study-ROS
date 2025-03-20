@@ -138,7 +138,8 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(dynamic_tf_change_pub_node src/dynamic_tf_change_pub_node.cpp)
 add_executable(dynamic_tf_change_sub_node src/dynamic_tf_change_sub_node.cpp)
-
+add_executable(tf_change_son1_node src/tf_change_son1_node.cpp)
+add_executable(tf_change_son2_node src/tf_change_son2_node.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -156,6 +157,13 @@ add_executable(dynamic_tf_change_sub_node src/dynamic_tf_change_sub_node.cpp)
 target_link_libraries(dynamic_tf_change_sub_node
         ${catkin_LIBRARIES}
 )
+target_link_libraries(tf_change_son1_node
+        ${catkin_LIBRARIES}
+)
+target_link_libraries(tf_change_son2_node
+        ${catkin_LIBRARIES}
+)
+
 
 #############
 ## Install ##

@@ -350,6 +350,76 @@ build devel/lib/dynamic_tf_change/dynamic_tf_change_sub_node: CXX_EXECUTABLE_LIN
   TARGET_FILE = devel/lib/dynamic_tf_change/dynamic_tf_change_sub_node
   TARGET_PDB = dynamic_tf_change_sub_node.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target tf_change_son1_node
+
+
+#############################################
+# Order-only phony target for tf_change_son1_node
+
+build cmake_object_order_depends_target_tf_change_son1_node: phony || .
+
+build CMakeFiles/tf_change_son1_node.dir/src/tf_change_son1_node.cpp.o: CXX_COMPILER__tf_change_son1_node_unscanned_Debug /home/wjr/ros_ws/src/dynamic_tf_change/src/tf_change_son1_node.cpp || cmake_object_order_depends_target_tf_change_son1_node
+  DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"dynamic_tf_change\"
+  DEP_FILE = CMakeFiles/tf_change_son1_node.dir/src/tf_change_son1_node.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3
+  OBJECT_DIR = CMakeFiles/tf_change_son1_node.dir
+  OBJECT_FILE_DIR = CMakeFiles/tf_change_son1_node.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tf_change_son1_node
+
+
+#############################################
+# Link the executable devel/lib/dynamic_tf_change/tf_change_son1_node
+
+build devel/lib/dynamic_tf_change/tf_change_son1_node: CXX_EXECUTABLE_LINKER__tf_change_son1_node_Debug CMakeFiles/tf_change_son1_node.dir/src/tf_change_son1_node.cpp.o | /usr/local/lib/liborocos-kdl.so /usr/local/lib/liborocos-kdl.so.1.5.1 /opt/ros/noetic/lib/libtf2_ros.so /opt/ros/noetic/lib/libactionlib.so /opt/ros/noetic/lib/libmessage_filters.so /opt/ros/noetic/lib/libroscpp.so /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.74.0 /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0 /opt/ros/noetic/lib/librosconsole.so /opt/ros/noetic/lib/librosconsole_log4cxx.so /opt/ros/noetic/lib/librosconsole_backend_interface.so /usr/lib/x86_64-linux-gnu/liblog4cxx.so /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.74.0 /opt/ros/noetic/lib/libxmlrpcpp.so /opt/ros/noetic/lib/libtf2.so /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/librostime.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.74.0 /opt/ros/noetic/lib/libcpp_common.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.74.0 /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib:/opt/ros/noetic/lib  /usr/local/lib/liborocos-kdl.so  /usr/local/lib/liborocos-kdl.so.1.5.1  /opt/ros/noetic/lib/libtf2_ros.so  /opt/ros/noetic/lib/libactionlib.so  /opt/ros/noetic/lib/libmessage_filters.so  /opt/ros/noetic/lib/libroscpp.so  /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.74.0  /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0  /opt/ros/noetic/lib/librosconsole.so  /opt/ros/noetic/lib/librosconsole_log4cxx.so  /opt/ros/noetic/lib/librosconsole_backend_interface.so  -llog4cxx  /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.74.0  /opt/ros/noetic/lib/libxmlrpcpp.so  /opt/ros/noetic/lib/libtf2.so  /opt/ros/noetic/lib/libroscpp_serialization.so  /opt/ros/noetic/lib/librostime.so  /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.74.0  /opt/ros/noetic/lib/libcpp_common.so  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0  /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.74.0  /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
+  OBJECT_DIR = CMakeFiles/tf_change_son1_node.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = devel/lib/dynamic_tf_change/tf_change_son1_node
+  TARGET_PDB = tf_change_son1_node.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target tf_change_son2_node
+
+
+#############################################
+# Order-only phony target for tf_change_son2_node
+
+build cmake_object_order_depends_target_tf_change_son2_node: phony || .
+
+build CMakeFiles/tf_change_son2_node.dir/src/tf_change_son2_node.cpp.o: CXX_COMPILER__tf_change_son2_node_unscanned_Debug /home/wjr/ros_ws/src/dynamic_tf_change/src/tf_change_son2_node.cpp || cmake_object_order_depends_target_tf_change_son2_node
+  DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"dynamic_tf_change\"
+  DEP_FILE = CMakeFiles/tf_change_son2_node.dir/src/tf_change_son2_node.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3
+  OBJECT_DIR = CMakeFiles/tf_change_son2_node.dir
+  OBJECT_FILE_DIR = CMakeFiles/tf_change_son2_node.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tf_change_son2_node
+
+
+#############################################
+# Link the executable devel/lib/dynamic_tf_change/tf_change_son2_node
+
+build devel/lib/dynamic_tf_change/tf_change_son2_node: CXX_EXECUTABLE_LINKER__tf_change_son2_node_Debug CMakeFiles/tf_change_son2_node.dir/src/tf_change_son2_node.cpp.o | /usr/local/lib/liborocos-kdl.so /usr/local/lib/liborocos-kdl.so.1.5.1 /opt/ros/noetic/lib/libtf2_ros.so /opt/ros/noetic/lib/libactionlib.so /opt/ros/noetic/lib/libmessage_filters.so /opt/ros/noetic/lib/libroscpp.so /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.74.0 /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0 /opt/ros/noetic/lib/librosconsole.so /opt/ros/noetic/lib/librosconsole_log4cxx.so /opt/ros/noetic/lib/librosconsole_backend_interface.so /usr/lib/x86_64-linux-gnu/liblog4cxx.so /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.74.0 /opt/ros/noetic/lib/libxmlrpcpp.so /opt/ros/noetic/lib/libtf2.so /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/librostime.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.74.0 /opt/ros/noetic/lib/libcpp_common.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.74.0 /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib:/opt/ros/noetic/lib  /usr/local/lib/liborocos-kdl.so  /usr/local/lib/liborocos-kdl.so.1.5.1  /opt/ros/noetic/lib/libtf2_ros.so  /opt/ros/noetic/lib/libactionlib.so  /opt/ros/noetic/lib/libmessage_filters.so  /opt/ros/noetic/lib/libroscpp.so  /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.74.0  /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0  /opt/ros/noetic/lib/librosconsole.so  /opt/ros/noetic/lib/librosconsole_log4cxx.so  /opt/ros/noetic/lib/librosconsole_backend_interface.so  -llog4cxx  /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.74.0  /opt/ros/noetic/lib/libxmlrpcpp.so  /opt/ros/noetic/lib/libtf2.so  /opt/ros/noetic/lib/libroscpp_serialization.so  /opt/ros/noetic/lib/librostime.so  /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.74.0  /opt/ros/noetic/lib/libcpp_common.so  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0  /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.74.0  /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
+  OBJECT_DIR = CMakeFiles/tf_change_son2_node.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = devel/lib/dynamic_tf_change/tf_change_son2_node
+  TARGET_PDB = tf_change_son2_node.dbg
+
 
 #############################################
 # Utility command for test
@@ -882,6 +952,10 @@ build libgtest_maind.so: phony gtest/lib/libgtest_maind.so
 
 build libgtestd.so: phony gtest/lib/libgtestd.so
 
+build tf_change_son1_node: phony devel/lib/dynamic_tf_change/tf_change_son1_node
+
+build tf_change_son2_node: phony devel/lib/dynamic_tf_change/tf_change_son2_node
+
 # =============================================================================
 # Folder targets.
 
@@ -890,7 +964,7 @@ build libgtestd.so: phony gtest/lib/libgtestd.so
 #############################################
 # Folder: /home/wjr/ros_ws/src/dynamic_tf_change/cmake-build-debug
 
-build all: phony devel/lib/dynamic_tf_change/dynamic_tf_change_pub_node devel/lib/dynamic_tf_change/dynamic_tf_change_sub_node gtest/all
+build all: phony devel/lib/dynamic_tf_change/dynamic_tf_change_pub_node devel/lib/dynamic_tf_change/dynamic_tf_change_sub_node devel/lib/dynamic_tf_change/tf_change_son1_node devel/lib/dynamic_tf_change/tf_change_son2_node gtest/all
 
 # =============================================================================
 

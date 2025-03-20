@@ -40,6 +40,8 @@
 /home/wjr/ros_ws/src/dynamic_tf_change/cmake-build-debug/CMakeFiles/actionlib_generate_messages_py.dir
 /home/wjr/ros_ws/src/dynamic_tf_change/cmake-build-debug/CMakeFiles/dynamic_tf_change_pub_node.dir
 /home/wjr/ros_ws/src/dynamic_tf_change/cmake-build-debug/CMakeFiles/dynamic_tf_change_sub_node.dir
+/home/wjr/ros_ws/src/dynamic_tf_change/cmake-build-debug/CMakeFiles/tf_change_son1_node.dir
+/home/wjr/ros_ws/src/dynamic_tf_change/cmake-build-debug/CMakeFiles/tf_change_son2_node.dir
 /home/wjr/ros_ws/src/dynamic_tf_change/cmake-build-debug/CMakeFiles/test.dir
 /home/wjr/ros_ws/src/dynamic_tf_change/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/wjr/ros_ws/src/dynamic_tf_change/cmake-build-debug/CMakeFiles/rebuild_cache.dir
