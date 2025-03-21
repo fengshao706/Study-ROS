@@ -140,6 +140,8 @@ add_executable(dynamic_tf_change_pub_node src/dynamic_tf_change_pub_node.cpp)
 add_executable(dynamic_tf_change_sub_node src/dynamic_tf_change_sub_node.cpp)
 add_executable(tf_change_son1_node src/tf_change_son1_node.cpp)
 add_executable(tf_change_son2_node src/tf_change_son2_node.cpp)
+add_executable(publish_turtle_tf_node src/publish_turtle_tf_node.cpp)
+add_executable(control_turtle_catch_up_node src/control_turtle_catch_up_node.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -161,6 +163,12 @@ target_link_libraries(tf_change_son1_node
         ${catkin_LIBRARIES}
 )
 target_link_libraries(tf_change_son2_node
+        ${catkin_LIBRARIES}
+)
+target_link_libraries(publish_turtle_tf_node
+        ${catkin_LIBRARIES}
+)
+target_link_libraries(control_turtle_catch_up_node
         ${catkin_LIBRARIES}
 )
 

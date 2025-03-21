@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "devel/lib/dynamic_tf_change/dynamic_tf_change_sub_node"
+			"path" : "devel/lib/dynamic_tf_change/publish_turtle_tf_node"
 		}
 	],
 	"backtrace" : 1,
@@ -36,13 +36,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 140,
+				"line" : 143,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 157,
+				"line" : 168,
 				"parent" : 0
 			},
 			{
@@ -173,7 +173,7 @@
 			]
 		}
 	],
-	"id" : "dynamic_tf_change_sub_node::@6890427a1f51a3e7e1df",
+	"id" : "publish_turtle_tf_node::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -302,8 +302,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "dynamic_tf_change_sub_node",
-	"nameOnDisk" : "dynamic_tf_change_sub_node",
+	"name" : "publish_turtle_tf_node",
+	"nameOnDisk" : "publish_turtle_tf_node",
 	"paths" : 
 	{
 		"build" : ".",
@@ -324,7 +324,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/dynamic_tf_change_sub_node.cpp",
+			"path" : "src/publish_turtle_tf_node.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
