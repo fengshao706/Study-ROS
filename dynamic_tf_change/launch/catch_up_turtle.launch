@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node" output="screen"/>
+    <node pkg="turtlesim" type="turtle_teleop_key" name="turtle_teleop_key" output="screen"/>
+    <node pkg="dynamic_tf_change" type="publish_turtle_tf_node" name="publish_turtle_tf_node" output="screen"/>
+    <node pkg="dynamic_tf_change" type="control_turtle_catch_up_node" name="control_turtle_catch_up_node"/>
+
+</launch>

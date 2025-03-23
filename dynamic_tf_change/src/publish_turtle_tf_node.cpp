@@ -7,6 +7,7 @@
 #include "geometry_msgs/Transform.h"
 #include "tf2_ros/transform_broadcaster.h"
 #include "tf2/LinearMath/Quaternion.h"
+#include "turtlesim/Spawn.h"
 
 
 void publishTF(const turtlesim::Pose &pose,std::string child_frame_id) {
@@ -38,6 +39,19 @@ void newTurtleCallback(const turtlesim::Pose &pose) {
 int main(int argc, char *argv[]) {
     ros::init(argc,argv,"publish_turtle_tf_node");
     ros::NodeHandle nh;
+    ros::ServiceClient service_client=nh.serviceClient<turtlesim::Spawn>("/spawn");
+    turtlesim::Spawn spawn;
+    spawn.request.x=3;
+    spawn.request.y=3;
+    spawn.request.theta=0;
+    spawn.request.name="new";
+    ros::Duration(1).sleep();
+    bool result=service_client.call(spawn);
+    if (result==1) {
+        ROS_INFO("successfully!");
+    }else {
+        ROS_INFO("fail");
+    }
     ros::MultiThreadedSpinner spinner(2);
     ros::Subscriber oldTurtleSubscriber=nh.subscribe("/turtle1/pose",10,oldTurtleCallback);
     ros::Subscriber newTurtleSubscriber=nh.subscribe("/new/pose",10,newTurtleCallback);
