@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: dynamic_tf_change
+Description: Description of dynamic_tf_change
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

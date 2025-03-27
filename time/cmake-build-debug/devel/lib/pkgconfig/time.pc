@@ -1,0 +1,8 @@
+prefix=/home/wjr/ros_ws/src/time/cmake-build-debug/devel
+
+Name: time
+Description: Description of time
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/wjr/ros_ws/src/plumbing_server_client/cmake-build-debug/devel/setup.sh

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/wjr/ros_ws/src/dynamic_tf_change/cmake-build-debug/devel/setup.sh

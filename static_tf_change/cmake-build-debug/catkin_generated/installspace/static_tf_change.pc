@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: static_tf_change
+Description: Description of static_tf_change
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
