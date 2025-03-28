@@ -8,8 +8,7 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/wjr/ros_ws/src/simulation/cmake-build-debug/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH='/home/wjr/ros_ws/src/simulation/cmake-build-debug/devel/lib:/home/wjr/ros_ws/devel/lib:/opt/ros/noetic/lib:/Home/opencv-4.8.1/build/lib'
-export PATH='/opt/ros/noetic/bin:/Home/opencv-4.8.1/build/bin:/home/wjr/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/snap/clion/332/bin/ninja/linux/x64'
+export LD_LIBRARY_PATH="/home/wjr/ros_ws/src/simulation/cmake-build-debug/devel/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/home/wjr/ros_ws/src/simulation/cmake-build-debug/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/wjr/ros_ws/src/simulation/cmake-build-debug/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/wjr/ros_ws/src/simulation:$ROS_PACKAGE_PATH"
