@@ -27,7 +27,7 @@
         <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
             <rosDebugLevel>Debug</rosDebugLevel>
             <!-- Plugin update rate in Hz -->
-            <updateRate>5</updateRate>
+            <updateRate>20</updateRate>
 
             <!-- Name of left joint, defaults to `left_joint` -->
             <leftJoint>left_wheelToBase</leftJoint>
@@ -63,8 +63,8 @@
             <odometrySource>world</odometrySource>
 
             <!-- Set to true to publish transforms for the wheel links, defaults to false -->
-            <publishWheelTF>true</publishWheelTF>
-
+            <publishWheelTF>false</publishWheelTF>
+            <publishTf>1</publishTf>
             <!-- Set to true to publish transforms for the odometry, defaults to true -->
             <publishOdom>true</publishOdom>
             <publishOdomTF>true</publishOdomTF>

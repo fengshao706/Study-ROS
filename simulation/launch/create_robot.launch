@@ -4,6 +4,9 @@
     <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher"/>
     <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>
     <arg name="gazebo_path" default="/usr/bin/gazebo" />
-    <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find simulation)/world/robot.world"/>
+    </include>
+
     <node pkg="gazebo_ros" type="spawn_model" name="spawn_model" args="-urdf -model car -param robot_description"/>
 </launch>
