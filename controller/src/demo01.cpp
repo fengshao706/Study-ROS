@@ -7,7 +7,7 @@
 #include "hardware_interface/joint_state_interface.h"
 #include "hardware_interface/robot_hw.h"
 #include "geometry_msgs/Twist.h"
-#include "stdlib.h"
+#include "velocity_controllers/joint_velocity_controller.h"
 
 class WheelHardware : public hardware_interface::RobotHW
 {
@@ -25,7 +25,7 @@ public:
         registerInterface(&joint_state_interface_);
         registerInterface(&velocity_joint_interface_);//注册接口到硬件
     }
-    void read()
+    void read () 
     {
         for (int i=0;i<4;i++)
         {
@@ -59,7 +59,7 @@ private:
     ros::Duration period;
 };
 
-class VelocityController
+class VelocityController : public controller_interface::Controller<hardware_interface::VelocityJointInterface>
 {
 public:
     VelocityController(WheelHardware &hw) : nh("~"),wheel_hardware_(hw)//控制器初始化
@@ -67,7 +67,7 @@ public:
         publisher_=nh.advertise<geometry_msgs::Twist>("/cmd_vel",10);
         subscriber_=nh.subscribe("/cmd_vel",10,&VelocityController::callBack,this);
     }
-    void setVelocity(double x)//设定速度
+    void update(double x)//设定速度
     {
         geometry_msgs::Twist twist;
         twist.linear.x=x;
@@ -77,6 +77,7 @@ public:
         twist.angular.y=0;
         twist.angular.z=0;
         publisher_.publish(twist);
+        
     }
     void callBack(const geometry_msgs::Twist::ConstPtr &msg)
     {
@@ -100,9 +101,12 @@ int main(int argc, char* argv[])
     ros::NodeHandle nh;
     WheelHardware wheel_hardware;//创建硬件接口
     controller_manager::ControllerManager controller_manager(&wheel_hardware,nh);
-    VelocityController velocity_controller(wheel_hardware);
+    //VelocityController velocity_controller(wheel_hardware);
+    controller_manager.loadController("joint_velocity_controller");
+    ros::AsyncSpinner spinner(3);
+    spinner.start();
+    ros::Rate rate(10);
 
-    ros::Rate rate(2);
     while (ros::ok())
     {
         wheel_hardware.read();

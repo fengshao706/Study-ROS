@@ -1,1 +1,1 @@
-set(ORDERED_PATHS "/opt/ros/noetic/lib")
+set(ORDERED_PATHS "/home/wjr/ros_ws/devel/.private/velocity_controllers/lib;/opt/ros/noetic/lib")

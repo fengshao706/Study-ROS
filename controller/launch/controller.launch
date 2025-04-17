@@ -1,0 +1,5 @@
+<launch>
+
+    <rosparam command="load" file="$(find controller)/config/controllers.yaml" ns="/velocity_controller"/>
+
+</launch>

@@ -18,6 +18,9 @@ find_package(catkin REQUIRED COMPONENTS
   transmission_interface
   urdf
   xacro
+        velocity_controllers
+        pluginlib
+        controller_manager_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -128,9 +131,9 @@ include_directories(
 )
 
 ## Declare a C++ library
-# add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/controller.cpp
-# )
+add_library(controller_plugins
+  src/demo02.cpp
+ )
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -141,6 +144,8 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
  add_executable(demo01 src/demo01.cpp)
+ add_executable(demo02 src/demo02.cpp)
+add_executable(Publisher src/Publisher.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -156,7 +161,16 @@ include_directories(
 target_link_libraries(demo01
    ${catkin_LIBRARIES}
  )
-
+target_link_libraries(demo02
+        ${catkin_LIBRARIES}
+)
+target_link_libraries(Publisher
+        ${catkin_LIBRARIES}
+)
+target_link_libraries(controller_plugins
+        ${catkin_LIBRARIES}
+        ${PLUGINLIB_LIBRARIES}
+)
 #############
 ## Install ##
 #############
@@ -191,7 +205,15 @@ target_link_libraries(demo01
 #   FILES_MATCHING PATTERN "*.h"
 #   PATTERN ".svn" EXCLUDE
 # )
+install(TARGETS controller_plugins
+        ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+        LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+)
 
+# 安装插件描述文件
+install(FILES plugins.xml
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
 ## Mark other files for installation (e.g. launch and bag files, etc.)
 # install(FILES
 #   # myfile1

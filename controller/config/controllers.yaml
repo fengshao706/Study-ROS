@@ -1,0 +1,3 @@
+VelocityController:  # 控制器名称（唯一标识）
+  type: controller/VelocityController  # 控制器类型
+  joint: wheel_1
