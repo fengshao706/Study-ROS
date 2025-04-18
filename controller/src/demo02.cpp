@@ -98,6 +98,7 @@ int main(int argc, char* argv[])
     controller_manager::ControllerManager cm(&base_hardware_interface);
     std::vector<std::string> start_controllers = {"VelocityController"};
     std::vector<std::string> stop_controllers;
+    ros::Duration(2).sleep();
     if (cm.loadController("VelocityController"))
     {
         ROS_INFO("Successful to load VelocityController!");
