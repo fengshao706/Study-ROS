@@ -49,44 +49,46 @@ private:
         temp_vel=msg->linear.x;//获取发布者节点发布的速度消息
     }
 };
-
-class VelocityController : public controller_interface::Controller<hardware_interface::VelocityJointInterface>//创建控制器
+namespace controller
 {
-public:
-    bool init(hardware_interface::VelocityJointInterface* hw, ros::NodeHandle&root_nh, ros::NodeHandle&controller_nh) override
+    class VelocityController : public controller_interface::Controller<hardware_interface::VelocityJointInterface>//创建控制器
     {
-        hw_=hw;//将传入的hw赋给私有的hw_
-
-        if (!hw_)
+    public:
+        bool init(hardware_interface::VelocityJointInterface* hw, ros::NodeHandle&root_nh, ros::NodeHandle&controller_nh) override
         {
-            ROS_ERROR("HW_ is null");
-            return false;
+            hw_=hw;//将传入的hw赋给私有的hw_
+
+            if (!hw_)
+            {
+                ROS_ERROR("HW_ is null");
+                return false;
+            }
+
+            ROS_INFO("Init");
+            return true;
         }
-        
-        ROS_INFO("Init");
-        return true;
-    }
-    void starting(const ros::Time&) override
-    {
-        ROS_INFO("Starting now");
-    }
-    void stopping(const ros::Time& time)
-    {
+        void starting(const ros::Time&) override
+        {
+            ROS_INFO("Starting now");
+        }
+        void stopping(const ros::Time& time)
+        {
 
-    }
+        }
 
-    void update(const ros::Time& time, const ros::Duration& period) override
-    {
-        double jointVel=hw_->getHandle("wheel_1").getVelocity();//获取速度
-        hw_->getHandle("wheel_1").setCommand(jointVel+0.001);//测试案例，粗暴地将速度加上0.001后传给硬件接口
-        ROS_INFO("UPDATE");
-    }
-    ros::NodeHandle nh;
-private:
-    hardware_interface::VelocityJointInterface *hw_;
-    hardware_interface::JointStateHandle joint_state_handle_;
-};
-PLUGINLIB_EXPORT_CLASS(VelocityController, controller_interface::ControllerBase)
+        void update(const ros::Time& time, const ros::Duration& period) override
+        {
+            double jointVel=hw_->getHandle("wheel_1").getVelocity();//获取速度
+            hw_->getHandle("wheel_1").setCommand(jointVel+0.001);//测试案例，粗暴地将速度加上0.001后传给硬件接口
+            ROS_INFO("UPDATE");
+        }
+        ros::NodeHandle nh;
+    private:
+        hardware_interface::VelocityJointInterface *hw_;
+        hardware_interface::JointStateHandle joint_state_handle_;
+    };
+}
+PLUGINLIB_EXPORT_CLASS(controller::VelocityController, controller_interface::ControllerBase)
 int main(int argc, char* argv[])
 {
     ros::init(argc,argv,"demo02_node");

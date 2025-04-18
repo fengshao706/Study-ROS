@@ -131,7 +131,7 @@ include_directories(
 )
 
 ## Declare a C++ library
-add_library(controller_plugins
+add_library(controller_plugins SHARED
   src/demo02.cpp
  )
 
@@ -163,6 +163,7 @@ target_link_libraries(demo01
  )
 target_link_libraries(demo02
         ${catkin_LIBRARIES}
+        controller_plugins
 )
 target_link_libraries(Publisher
         ${catkin_LIBRARIES}

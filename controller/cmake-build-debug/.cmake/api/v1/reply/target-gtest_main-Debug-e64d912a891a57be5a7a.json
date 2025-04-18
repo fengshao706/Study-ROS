@@ -24,8 +24,8 @@
 		[
 			"/usr/src/googletest/googletest/cmake/internal_utils.cmake",
 			"/usr/src/googletest/googletest/CMakeLists.txt",
-			"/snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindThreads.cmake",
-			"/snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindGTest.cmake",
+			"/snap/clion/338/bin/cmake/linux/x64/share/cmake-3.31/Modules/FindThreads.cmake",
+			"/snap/clion/338/bin/cmake/linux/x64/share/cmake-3.31/Modules/FindGTest.cmake",
 			"/opt/ros/noetic/share/catkin/cmake/test/gtest.cmake",
 			"/opt/ros/noetic/share/catkin/cmake/all.cmake",
 			"/opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake",
